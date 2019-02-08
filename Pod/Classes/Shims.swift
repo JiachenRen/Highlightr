@@ -15,11 +15,11 @@ import Foundation
 #if swift(>=4.2)
     public typealias AttributedStringKey = NSAttributedString.Key
 #else
-    public typealias AttributedStringKey = NSAttributedStringKey
+    public typealias AttributedStringKey = NSAttributedString.Key
 #endif
 
 #if swift(>=4.2) && os(iOS)
     public typealias TextStorageEditActions = NSTextStorage.EditActions
 #else
-    public typealias TextStorageEditActions = NSTextStorageEditActions
+    public typealias TextStorageEditActions = NSTextStorage.EditActions
 #endif
