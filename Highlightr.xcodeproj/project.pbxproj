@@ -64,8 +64,6 @@
 		8CC1C7181F3A636B0093293D /* atom-one-dark.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 8CC1C6AE1F3A636B0093293D /* atom-one-dark.min.css */; };
 		8CC1C7191F3A636B0093293D /* atom-one-light.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 8CC1C6AF1F3A636B0093293D /* atom-one-light.min.css */; };
 		8CC1C71A1F3A636B0093293D /* atom-one-light.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 8CC1C6AF1F3A636B0093293D /* atom-one-light.min.css */; };
-		8CC1C71B1F3A636B0093293D /* brown-paper.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 8CC1C6B01F3A636B0093293D /* brown-paper.min.css */; };
-		8CC1C71C1F3A636B0093293D /* brown-paper.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 8CC1C6B01F3A636B0093293D /* brown-paper.min.css */; };
 		8CC1C71F1F3A636B0093293D /* codepen-embed.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 8CC1C6B21F3A636B0093293D /* codepen-embed.min.css */; };
 		8CC1C7201F3A636B0093293D /* codepen-embed.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 8CC1C6B21F3A636B0093293D /* codepen-embed.min.css */; };
 		8CC1C7211F3A636B0093293D /* color-brewer.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 8CC1C6B31F3A636B0093293D /* color-brewer.min.css */; };
@@ -213,7 +211,6 @@
 		8CC1C6AD1F3A636B0093293D /* atelier-sulphurpool-light.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = "atelier-sulphurpool-light.min.css"; path = "Pod/Assets/styles/atelier-sulphurpool-light.min.css"; sourceTree = SOURCE_ROOT; };
 		8CC1C6AE1F3A636B0093293D /* atom-one-dark.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = "atom-one-dark.min.css"; path = "Pod/Assets/styles/atom-one-dark.min.css"; sourceTree = SOURCE_ROOT; };
 		8CC1C6AF1F3A636B0093293D /* atom-one-light.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = "atom-one-light.min.css"; path = "Pod/Assets/styles/atom-one-light.min.css"; sourceTree = SOURCE_ROOT; };
-		8CC1C6B01F3A636B0093293D /* brown-paper.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = "brown-paper.min.css"; path = "Pod/Assets/styles/brown-paper.min.css"; sourceTree = SOURCE_ROOT; };
 		8CC1C6B21F3A636B0093293D /* codepen-embed.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = "codepen-embed.min.css"; path = "Pod/Assets/styles/codepen-embed.min.css"; sourceTree = SOURCE_ROOT; };
 		8CC1C6B31F3A636B0093293D /* color-brewer.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = "color-brewer.min.css"; path = "Pod/Assets/styles/color-brewer.min.css"; sourceTree = SOURCE_ROOT; };
 		8CC1C6B41F3A636B0093293D /* darcula.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = darcula.min.css; path = Pod/Assets/styles/darcula.min.css; sourceTree = SOURCE_ROOT; };
@@ -358,7 +355,6 @@
 				8CC1C6AD1F3A636B0093293D /* atelier-sulphurpool-light.min.css */,
 				8CC1C6AE1F3A636B0093293D /* atom-one-dark.min.css */,
 				8CC1C6AF1F3A636B0093293D /* atom-one-light.min.css */,
-				8CC1C6B01F3A636B0093293D /* brown-paper.min.css */,
 				8CC1C6B21F3A636B0093293D /* codepen-embed.min.css */,
 				8CC1C6B31F3A636B0093293D /* color-brewer.min.css */,
 				8CC1C6B41F3A636B0093293D /* darcula.min.css */,
@@ -604,7 +600,6 @@
 				8CC1C72B1F3A636B0093293D /* docco.min.css in Resources */,
 				8CC1C7471F3A636B0093293D /* kimbie.dark.min.css in Resources */,
 				8CC1C7291F3A636B0093293D /* default.min.css in Resources */,
-				8CC1C71B1F3A636B0093293D /* brown-paper.min.css in Resources */,
 				8CC1C6EB1F3A636B0093293D /* arta.min.css in Resources */,
 				8CC1C70B1F3A636B0093293D /* atelier-savanna-dark.min.css in Resources */,
 				8CC1C7611F3A636B0093293D /* qtcreator_light.min.css in Resources */,
@@ -691,7 +686,6 @@
 				8CC1C72C1F3A636B0093293D /* docco.min.css in Resources */,
 				8CC1C7481F3A636B0093293D /* kimbie.dark.min.css in Resources */,
 				8CC1C72A1F3A636B0093293D /* default.min.css in Resources */,
-				8CC1C71C1F3A636B0093293D /* brown-paper.min.css in Resources */,
 				8CC1C6EC1F3A636B0093293D /* arta.min.css in Resources */,
 				8CC1C70C1F3A636B0093293D /* atelier-savanna-dark.min.css in Resources */,
 				8CC1C7621F3A636B0093293D /* qtcreator_light.min.css in Resources */,
