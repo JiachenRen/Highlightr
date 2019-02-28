@@ -123,7 +123,7 @@ open class CodeAttributedString : NSTextStorage
     open override func replaceCharacters(in range: NSRange, with str: String)
     {
         stringStorage.replaceCharacters(in: range, with: str)
-        self.edited(NSTextStorageEditActions.editedCharacters, range: range, changeInLength: (str as NSString).length - range.length)
+        self.edited(TextStorageEditActions.editedCharacters, range: range, changeInLength: (str as NSString).length - range.length)
     }
     
     /**
@@ -135,7 +135,7 @@ open class CodeAttributedString : NSTextStorage
     open override func setAttributes(_ attrs: [NSAttributedString.Key : Any]?, range: NSRange)
     {
         stringStorage.setAttributes(attrs, range: range)
-        self.edited(NSTextStorageEditActions.editedAttributes, range: range, changeInLength: 0)
+        self.edited(TextStorageEditActions.editedAttributes, range: range, changeInLength: 0)
     }
     
     /// Called internally everytime the string is modified.
@@ -196,7 +196,7 @@ open class CodeAttributedString : NSTextStorage
                     self.stringStorage.setAttributes(attrs, range: fixedRange)
                 })
                 self.endEditing()
-                self.edited(NSTextStorageEditActions.editedAttributes, range: range, changeInLength: 0)
+                self.edited(TextStorageEditActions.editedAttributes, range: range, changeInLength: 0)
                 self.highlightDelegate?.didHighlight?(range, success: true)
             })
             
