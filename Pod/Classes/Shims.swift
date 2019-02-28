@@ -21,5 +21,5 @@ import Foundation
 #if swift(>=4.2) && os(iOS)
     public typealias TextStorageEditActions = NSTextStorage.EditActions
 #else
-    public typealias TextStorageEditActions = NSTextStorage.EditActions
+    public typealias TextStorageEditActions = NSTextStorageEditActions
 #endif
