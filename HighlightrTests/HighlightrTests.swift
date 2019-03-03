@@ -20,7 +20,13 @@ def f(x) {
     exit()
     while (true) {
         x := 3.14159
-        "sdfsdf" as string
+        $10
+        $a
+        @list
+        "sdfsdf" as @string
+    }
+    {
+        a: b
     }
 }
 f(x^2+log(x)^2*x)
