@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F0ACA62222C224D00870367 /* HighlightrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0ACA61222C224D00870367 /* HighlightrTests.swift */; };
+		1F0ACA64222C224D00870367 /* Highlightr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD1AE161F391713000FDA02 /* Highlightr.framework */; };
 		5662696320D94F9F00BEEE01 /* Shims.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5662696220D94F9F00BEEE01 /* Shims.swift */; };
 		5662696420D9508C00BEEE01 /* Shims.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5662696220D94F9F00BEEE01 /* Shims.swift */; };
 		8C2FB1C71F39118F00469D0D /* Highlightr.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C2FB1C51F39118F00469D0D /* Highlightr.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -181,7 +183,20 @@
 		8CD1AE241F39172D000FDA02 /* highlight.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 8CD1ADDC1F3912F2000FDA02 /* highlight.min.js */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1F0ACA65222C224D00870367 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C2FB1B91F39118F00469D0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CD1AE151F391713000FDA02;
+			remoteInfo = "Highlightr-macOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1F0ACA5F222C224D00870367 /* HighlightrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HighlightrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F0ACA61222C224D00870367 /* HighlightrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightrTests.swift; sourceTree = "<group>"; };
+		1F0ACA63222C224D00870367 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5662696220D94F9F00BEEE01 /* Shims.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Shims.swift; path = Pod/Classes/Shims.swift; sourceTree = SOURCE_ROOT; };
 		8C2FB1C21F39118F00469D0D /* Highlightr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Highlightr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C2FB1C51F39118F00469D0D /* Highlightr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Highlightr.h; sourceTree = "<group>"; };
@@ -277,6 +292,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1F0ACA5C222C224D00870367 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F0ACA64222C224D00870367 /* Highlightr.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8C2FB1BE1F39118F00469D0D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -294,11 +317,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F0ACA60222C224D00870367 /* HighlightrTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F0ACA61222C224D00870367 /* HighlightrTests.swift */,
+				1F0ACA63222C224D00870367 /* Info.plist */,
+			);
+			path = HighlightrTests;
+			sourceTree = "<group>";
+		};
 		8C2FB1B81F39118F00469D0D = {
 			isa = PBXGroup;
 			children = (
 				8C2FB1C41F39118F00469D0D /* Highlightr */,
 				8CD1AE171F391713000FDA02 /* Highlightr-macOS */,
+				1F0ACA60222C224D00870367 /* HighlightrTests */,
 				8C2FB1C31F39118F00469D0D /* Products */,
 				8CD1AE251F391801000FDA02 /* Frameworks */,
 			);
@@ -309,6 +342,7 @@
 			children = (
 				8C2FB1C21F39118F00469D0D /* Highlightr.framework */,
 				8CD1AE161F391713000FDA02 /* Highlightr.framework */,
+				1F0ACA5F222C224D00870367 /* HighlightrTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -462,6 +496,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1F0ACA5E222C224D00870367 /* HighlightrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F0ACA69222C224D00870367 /* Build configuration list for PBXNativeTarget "HighlightrTests" */;
+			buildPhases = (
+				1F0ACA5B222C224D00870367 /* Sources */,
+				1F0ACA5C222C224D00870367 /* Frameworks */,
+				1F0ACA5D222C224D00870367 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F0ACA66222C224D00870367 /* PBXTargetDependency */,
+			);
+			name = HighlightrTests;
+			productName = HighlightrTests;
+			productReference = 1F0ACA5F222C224D00870367 /* HighlightrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8C2FB1C11F39118F00469D0D /* Highlightr-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8C2FB1CA1F39118F00469D0D /* Build configuration list for PBXNativeTarget "Highlightr-iOS" */;
@@ -504,9 +556,15 @@
 		8C2FB1B91F39118F00469D0D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Illanes, Juan Pablo";
 				TargetAttributes = {
+					1F0ACA5E222C224D00870367 = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = AM89ND2ZY7;
+						ProvisioningStyle = Automatic;
+					};
 					8C2FB1C11F39118F00469D0D = {
 						CreatedOnToolsVersion = 8.3.3;
 						LastSwiftMigration = 1010;
@@ -533,11 +591,19 @@
 			targets = (
 				8C2FB1C11F39118F00469D0D /* Highlightr-iOS */,
 				8CD1AE151F391713000FDA02 /* Highlightr-macOS */,
+				1F0ACA5E222C224D00870367 /* HighlightrTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1F0ACA5D222C224D00870367 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8C2FB1C01F39118F00469D0D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -715,6 +781,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1F0ACA5B222C224D00870367 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F0ACA62222C224D00870367 /* HighlightrTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8C2FB1BD1F39118F00469D0D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -741,7 +815,60 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1F0ACA66222C224D00870367 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CD1AE151F391713000FDA02 /* Highlightr-macOS */;
+			targetProxy = 1F0ACA65222C224D00870367 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		1F0ACA67222C224D00870367 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = AM89ND2ZY7;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = HighlightrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiachenren.HighlightrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		1F0ACA68222C224D00870367 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = AM89ND2ZY7;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = HighlightrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiachenren.HighlightrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 		8C2FB1C81F39118F00469D0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -957,6 +1084,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1F0ACA69222C224D00870367 /* Build configuration list for PBXNativeTarget "HighlightrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F0ACA67222C224D00870367 /* Debug */,
+				1F0ACA68222C224D00870367 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8C2FB1BC1F39118F00469D0D /* Build configuration list for PBXProject "Highlightr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
