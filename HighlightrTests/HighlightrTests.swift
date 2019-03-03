@@ -13,6 +13,7 @@ class HighlightrTests: XCTestCase {
     
     let kelvinCodeSegment =
 """
+# This is a comment
 def f(x) {
     if (x > 3) {
         println factor(x)
