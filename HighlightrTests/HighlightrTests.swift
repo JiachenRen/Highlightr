@@ -119,11 +119,10 @@ class HighlightrTests: XCTestCase {
         let html = getFormatedHtml()
         
         self.measure {
-            guard let rendered = highlightr.render(html, fastRender: false) else {
+            guard let _ = highlightr.render(html, fastRender: false) else {
                 XCTFail("failed to render")
                 return
             }
-            print(rendered)
         }
     }
     
@@ -132,18 +131,10 @@ class HighlightrTests: XCTestCase {
         
         // Test fast render performance
         self.measure {
-            guard let rendered = highlightr.render(html, fastRender: true) else {
+            guard let _ = highlightr.render(html, fastRender: true) else {
                 XCTFail("failed to fast render")
                 return
             }
-            print(rendered)
-        }
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
         }
     }
 
