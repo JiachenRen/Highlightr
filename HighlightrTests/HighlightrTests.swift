@@ -96,6 +96,7 @@ class HighlightrTests: XCTestCase {
     }
 
 """
+    let highlightr = Highlightr()!
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -104,13 +105,39 @@ class HighlightrTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testHighlight() {
-        guard let highlightr = Highlightr() else {
-            XCTFail("failed to initialize highlightr")
-            return
+    
+    func getFormatedHtml() -> String {
+        guard let html = highlightr.formatHtml(swiftCodeSegment, as: "swift") else {
+            XCTFail("failed to format code as html")
+            fatalError()
         }
-        highlightr.highlight(swiftCodeSegment, as: "swift", fastRender: true)
+        return html
+    }
+    
+    /// Test default render perfomance
+    func testPerformanceRender() {
+        let html = getFormatedHtml()
+        
+        self.measure {
+            guard let rendered = highlightr.render(html, fastRender: false) else {
+                XCTFail("failed to render")
+                return
+            }
+            print(rendered)
+        }
+    }
+    
+    func testPerformanceFastRender() {
+        let html = getFormatedHtml()
+        
+        // Test fast render performance
+        self.measure {
+            guard let rendered = highlightr.render(html, fastRender: true) else {
+                XCTFail("failed to fast render")
+                return
+            }
+            print(rendered)
+        }
     }
 
     func testPerformanceExample() {

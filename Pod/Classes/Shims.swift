@@ -15,7 +15,7 @@ import Foundation
 #if swift(>=4.2)
     public typealias AttributedStringKey = NSAttributedString.Key
 #else
-    public typealias AttributedStringKey = NSAttributedString.Key
+    public typealias AttributedStringKey = NSAttributedStringKey
 #endif
 
 #if swift(>=4.2) && os(iOS)
